@@ -5,6 +5,7 @@ export const AppReducer = (state, action) => {
     let new_expenses = [];
     switch (action.type) {
         case 'ADD_QUANTITY':
+            // eslint-disable-next-line
             let updatedqty = false;
             state.expenses.map((expense)=>{
                 if(expense.name === action.payload.name) {
